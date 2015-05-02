@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+		<title>Nakebook</title>
+		 <meta name="author" content="Ифан Аррис, Daisy Lewis, Peter David Carter, and all at NAKEBOOK!">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" 
+		type="image/png" 
+		href="/img/nakeLogoMale.png">
+	</head>
+	<body>
+		<!-- Base element for app -->
+		<div id="AppBase"></div>
+
+		<!-- main layout template -->
+		<script type="text/template" id="template-AppLayoutView">
+			<div id="topbar">
+				<div class="innerLogo">
+					<img src="/img/nakeHead.jpg" height="33" wide="110">
+				</div>
+			</div>
+			<div id="left-sidebar">
+				<div class="sidebar-text">
+				<p><p/>
+				</div>
+			</div>
+			<div id="ContentRegion"></div>
+			</div>
+			<div id="navigation-bar">
+					<a id="nav-home" class="navButton" href="#home">Home</a>&nbsp;&nbsp;
+					<a id="nav-members" class="navButton" href="#members">Members</a>&nbsp;&nbsp;
+					<a id="nav-album" class="navButton" href="#album">Album</a>&nbsp;&nbsp;
+					<a id="nav-newsfeed" class="navButton" href="#newsfeed">Newsfeed</a>&nbsp;&nbsp;
+					<a id="nav-contact" class="navButton" href="#contact">Contact</a>&nbsp;&nbsp;
+					<a id="nav-more" class="navButton" href="#more">Nakebook STUFF!</a>
+			</div>
+		</script>
+
+		<!-- Main Page -->
+		<script type="text/template" id="template-HomeLayoutView">
+		<div id="main-content">
+			<div id="home">
+					<h1 class="title">Nakebook</br> </h1>
+					<h2 class="title">Be your most Naked self!</h2>
+			        <p>Bodies are natural things. We were born with them. We take them with us everywhere we go,
+					yet we are told that they are bad, sinful, a thing to be ashamed of. At Nakebook we believe
+					that bodies should not be locked away in shame until someone grabs you drunk at a party
+					and offers do the globe-jiggle. Negative attitudes to nudity have led many to become confused, 
+					often negative towards their own nakedness, particularly as the only models of nudity much of 
+					society sees are in pornography, where the kinds of nakedness on display are not those of the 
+					typical man or woman, and may lead people to consider themselves to be inadequate, when in fact they
+					are perfectly normal, healthy, *attractive* human beings.
+					</br></br>
+					More than this, when we cover up out bodies, often we find that we lose a part of ourselves with
+					it. A certain lack of expressive ability which may lead us to feel that we can only find true 
+					closeness  in sexual relationships or perhaps, in the worst cases, never at all. Our bodies can express 
+					who we are, what we feel, and what we want in ways that society doesn't always recognise. 
+					Nakebook believe that you are as free as you want to be, and your body is yours to do with as 
+					you choose. Your freedom is our freedom!</p>
+			</div>
+		</div>
+		</script>
+
+		<!-- Member's List -->
+		<script type="text/template" id="template-MembersLayoutView">
+		<div id="main-content">
+			<div class="members">
+    			<h1>Members</h1>
+    			<h2>Founding members</h2>
+    			<ul>
+    			    <li>Daisy Lewis</li>
+    			    <li>Ифан Аррис</li>
+    			</ul>
+
+    			<h2>Other members</h2>
+    			<ul>
+    			    <li>Peter Carter</li>
+    			    <li>[Put anyone else who wants to be listed on here later]</li>
+    			</ul>
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-AlbumLayoutView">
+		<div id="main-content">
+			<div class="album">
+    			<h1>Album</h1>
+				<img src="img/nakeCollage.jpg">
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-NewsfeedLayoutView">
+		<div id="main-content">
+		    <div class="newsfeed">
+		    	<h1>News</h1>
+		    	<ul>
+    			    <li>02/05/2015: Website launched today!</li>
+    			</ul>
+		    </div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-ContactLayoutView">
+		<div id="main-content">
+			<div class="contact">
+				<h1>Contact</h1>
+				<ul>
+				<li>Site creator and manager: Peter David Carter: <a href="mailto:peter.carter.mail@gmail.com">peter.carter.mail@gmail.com</a></li>
+				</ul>
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-MoreLayoutView">
+		<div id="main-content">
+			<div class="more">
+				<h1>More...</h1>
+    		    <p>We will be adding more content to this section in the near future.</p>
+    		</div>
+		</div>
+		</script>
+
+		<!-- libraries -->
+		<script type="text/javascript" src="vendor/jquery.js"></script>
+		<script type="text/javascript" src="vendor/underscore.js"></script>
+		<script type="text/javascript" src="vendor/backbone.js"></script>
+		<script type="text/javascript" src="vendor/backbone.marionette.js"></script>
+
+		<!-- app code -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
